@@ -1,8 +1,8 @@
-import pickle
+import joblib
 import streamlit as st
 
-# membaca model
-resto_model = pickle.load(open('resto_model.sav', 'rb'))
+# Membaca model
+resto_model = joblib.load('resto_model.joblib')
 
 #judul web
 st.title('Prediksi Profitability')
